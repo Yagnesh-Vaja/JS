@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        {
+            let rows = 5;
+            let i = 1;
+            while (i <= rows) {
+                let j = 1;
+                let row = "";
+                while (j <= i) {
+                    row += "*";
+                    j++;
+                }
+                document.write(row);
+                document.write("<br>")
+                i++;
+            }
+        }
+        {
+            let rows = 5;
+            let i = 1;
+            while (i <= rows) {
+                let row = "";
+                let j = 5;
+                while (j >= i) {
+                    row += "*";
+                    j--;
+                }
+                document.write(row);
+                document.write("<br>")
+                i++;
+            }
+        }
+    </script>
+</body>
+
+</html>

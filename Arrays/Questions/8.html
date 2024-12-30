@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const array = [10, 20, 30, 40, 50];
+        const target = 30;
+
+        let found = false;
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] === target) {
+                found = true;
+                break;
+            }
+        }
+
+        if (found) {
+            document.write(`The array contains the element ${target}.`);
+        } else {
+            document.write(`The array does not contain the element ${target}.`);
+        }
+
+    </script>
+</body>
+
+</html>

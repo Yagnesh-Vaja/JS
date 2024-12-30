@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let rows = 5;
+        let i = 1;
+
+        while (i <= rows) {
+            let spac = '';
+            let stars = '';
+
+            
+            let j = 1;
+            while (j < i) {
+                spac += '&nbsp;&nbsp;&nbsp;';
+                j++;
+            }
+
+        
+            let k = rows;
+            while (k >= i) { 
+                stars += '* ';
+                k--;
+            }
+
+            document.write(spac + stars);
+            document.write("<br>");
+            i++;
+        }
+
+    </script>
+</body>
+
+</html>
