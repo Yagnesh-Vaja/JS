@@ -7,18 +7,18 @@
 </head>
 <body>
     <script>
-        const arr=[50,20,10,40,30];
+        const arr=[50,20,30,10,40];
 
         for(let i=0;i<arr.length;i++){
             for(let j=0;j<arr.length-i-1;j++){
-                if(arr[j] > arr[j+1]){
+                if(arr[j] < arr[j+1]){
                     let temp=arr[j];
                     arr[j]=arr[j+1];
                     arr[j+1]=temp;
                 }
             }
         }
-        document.write("Ascending order of given array is: ",arr);
+        document.write("Decending order of given array is: ",arr);
     </script>
 </body>
 </html>
