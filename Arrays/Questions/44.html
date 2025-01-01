@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findIntersection(arr1,arr2){
+            return arr1.filter(element => arr2.includes(element))
+        }
+        const arr1=[10,20,30,40,50];
+        const arr2=[20,30,80,90,100];
+        document.write("Intersection of two array is: ",findIntersection(arr1,arr2));
+    </script>
+</body>
+</html>

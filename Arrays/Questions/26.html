@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function findMedian(array) {
+            // Step 1: Sort the array in ascending order
+            array.sort((a, b) => a - b);
+
+            // Step 2: Calculate the median
+            const length = array.length;
+            if (length % 2 === 1) {
+                // Odd number of elements
+                return array[Math.floor(length / 2)];
+            } else {
+                // Even number of elements
+                const mid1 = array[length / 2 - 1];
+                const mid2 = array[length / 2];
+                return (mid1 + mid2) / 2;
+            }
+        }
+
+        // Example usage
+        const array = [10, 20, 30, 40, 50];
+        console.log("Median:", findMedian(array));
+
+    </script>
+</body>
+
+</html>

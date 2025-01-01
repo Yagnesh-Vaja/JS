@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function rotateLeft(arr, steps) {
+            const n = arr.length;
+            steps = steps % n; // Handle cases where steps > array length
+
+            for (let i = 0; i < steps; i++) {
+                const firstElement = arr.shift(); // Remove the first element
+                arr.push(firstElement); // Add it to the end of the array
+            }
+
+            return arr;
+        }
+
+        // Example usage
+        const array = [1, 2, 3, 4, 5];
+        document.write("Rotated Array:", rotateLeft(array, 2)); 
+
+    </script>
+</body>
+
+</html>
