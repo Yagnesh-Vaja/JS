@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr1=[10,20,30,40,50];
+        const arr2=[10,20,30,40,50];
+        const sumArray=[];
+
+        if(arr1.length === arr2.length){
+            for(let i=0;i<arr1.length;i++){
+                sumArray.push(arr1[i]+arr2[i]);
+            }
+            document.write("First array: ",arr1);
+            document.write("<br>");
+            document.write("Second array: ",arr2);
+            document.write("<br>");
+            document.write("Sum array: ",sumArray);
+        }else{
+            document.write("Arrays must have same length")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr=[10,20,30,40,50];
+        const index1=1;
+        const index2=3;
+
+        let temp=arr[index1];
+        arr[index1]=arr[index2];
+        arr[index2]=temp;
+
+        document.write("Array after swapping: ",arr);
+    </script>
+</body>
+</html>
