@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const size=3;
+        const multiTable=[];
+        for(let i=1;i<=size;i++){
+            const row=[];
+            for(let j=1;j<=size;j++){
+                row.push(i*j);
+            }
+            multiTable.push(row);
+        }
+
+        for(let i=0;i<multiTable.length;i++){
+            document.write(multiTable[i].join("\t")+"<br>");
+        }
+    </script>
+</body>
+</html>

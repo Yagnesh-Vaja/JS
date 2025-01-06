@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const matrixA = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]
+        ]
+
+        const matrixB = [
+            [9, 8, 7],
+            [6, 5, 4],
+            [3, 2, 1]
+        ]
+
+
+        const resultMatrix = [];
+
+        if (matrixA[0].length !== matrixB.length) {
+            document.write("Matrix for this dimension is not possible")
+        } else {
+            for (let i = 0; i < matrixA.length; i++) {
+                const row = [];
+                for (let j = 0; j < matrixB[0].length; j++) {
+                    let sum = 0;
+                    for (let k = 0; k < matrixA[0].length; k++) {
+                        sum += matrixA[i][k] * matrixB[k][j];
+                    }
+                    row.push(sum);
+                }
+                resultMatrix.push(row);
+            }
+        }
+
+        for (let i = 0; i < resultMatrix.length; i++) {
+            document.write(resultMatrix[i]+"<br>");
+        }
+
+    </script>
+</body>
+
+</html>
