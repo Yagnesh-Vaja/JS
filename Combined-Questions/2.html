@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function calArraStates(numbers) {
+            let sum = 0;
+            let product = 1;
+            let count = numbers.length;
+
+            for (let i = 0; i < count; i++) {
+                sum += numbers[i];
+                product *= numbers[i];
+            }
+            let average = sum / count;
+
+            return {
+                sum: sum,
+                product: product,
+                average: average
+            }
+        }
+
+        const numbers = [2, 4, 6];
+        const result = calArraStates(numbers)
+        document.write("Sum:", result.sum);
+        document.write("<br>");
+        document.write("Product:", result.product);
+        document.write("<br>");
+        document.write("Average: ", result.average)
+    </script>
+</body>
+
+</html>

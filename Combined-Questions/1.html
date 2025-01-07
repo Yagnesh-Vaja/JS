@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const students = [
+            { name: "Yagnesh", marks: 80 },
+            { name: "Raj", marks: 85 },
+            { name: "Aman", marks: 90 },
+            { name: "Dhruv", marks: 95 },
+            { name: "Karan", marks: 80 }
+        ]
+
+        function calAve(students) {
+            let totalMarks = 0;
+            for (let i = 0; i < students.length; i++) {
+                totalMarks += students[i].marks;
+            }
+
+            const average = totalMarks / students.length;
+
+            return average;
+        }
+
+        const averageMarks = calAve(students);
+        document.write("Average Marks: ", averageMarks);
+
+    </script>
+</body>
+
+</html>

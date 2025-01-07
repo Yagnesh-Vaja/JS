@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Nested array
+        const nestedArray = [
+            [1, 2, 3],
+            [4, 5],
+            [6],
+            [7, 8, 9, 10]
+        ];
+
+        const sumArray = [];
+
+        for (let i = 0; i < nestedArray.length; i++) {
+            let subArray = nestedArray[i];
+            let total = 0;
+
+            for (let j = 0; j < subArray.length; j++) {
+                total += subArray[j];
+            }
+
+            sumArray.push(total);
+        }
+
+        document.write("Nested Array:", nestedArray);
+        document.write("<br>")
+        document.write("Sum Array:", sumArray);
+
+
+    </script>
+</body>
+
+</html>
