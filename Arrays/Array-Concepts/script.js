@@ -131,5 +131,25 @@ let maa=ma.map(function(value,index){
 })
 document.write(maa);
 
+//Arrays are fixed in terms of size
+//Array operations
+//Accesing
+//Insert
+//Delete
+//Traverse
+//Search
+//Update
+//Benifits: Random access,cache friendly,implement other Data structure
+//Limitations: Fixed size,insert,delete,insufficient for frequent modifications
+//Use cases
+//Implement DS
+//Caching
+//graph problem and tree
+//Mathematical
+//coding
+//Array 1D 2D 3D 4D 5D
+
+
+
 
 
