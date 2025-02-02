@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      const originalArr=["hello","welcome","to","JS","world"];
+      const reversedArr=[];
+      
+      for(let i=0;i<originalArr.length;i++){
+        let  reversedStr="";
+        for(let j=originalArr[i].length-1;j>=0;j--){
+            reversedStr+=originalArr[i][j];
+        }
+        reversedArr.push(reversedStr);
+      }
+
+      document.write("Original Array: ",originalArr);
+      document.write("<br>");
+      document.write("Reversed Array: ",reversedArr);
+    </script>
+</body>
+</html>

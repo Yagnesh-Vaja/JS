@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr=[10,20,30,40,50];
+
+        if(arr.length===0){
+            document.write("Array is empty you cannot calculate average");
+        }else{
+            let sum=0;
+
+            for(let i=0;i<arr.length;i++){
+                sum+=arr[i];
+            }
+
+            const avg=sum/arr.length;
+            document.write("The average is: ",avg);
+        }
+    </script>
+</body>
+</html>

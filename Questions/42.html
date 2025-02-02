@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function removeFalsyVal(arr){
+            return arr.filter(Boolean);
+        }
+        const arr=[1,'hello',2,0,false,3,null,4,NaN,5,true,6];
+        document.write("Array after removing falsy values: ",removeFalsyVal(arr));
+    </script>
+</body>
+</html>

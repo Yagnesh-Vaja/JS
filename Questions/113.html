@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const originalArray = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100];
+
+        const squareRootsArray = [];
+
+
+        for (let i = 0; i < originalArray.length; i++) {
+            const squareRoot = Math.sqrt(originalArray[i]); 
+            squareRootsArray.push(squareRoot);
+        }
+
+        document.write("Original Array:", originalArray);
+        document.write("<br>")
+        document.write("Square Roots Array:", squareRootsArray);
+
+    </script>
+</body>
+
+</html>

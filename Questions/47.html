@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function rotateRight(arr, steps) {
+            const n = arr.length;
+            steps = steps % n; // Handle cases where steps > array length
+
+            for (let i = 0; i < steps; i++) {
+                const lastElement = arr.pop(); // Remove the last element
+                arr.unshift(lastElement); // Add it to the beginning
+            }
+
+            return arr;
+        }
+
+        // Example usage
+        const array = [1, 2, 3, 4, 5];
+        document.write("Rotated Array:", rotateRight(array, 2)); 
+
+    </script>
+</body>
+
+</html>

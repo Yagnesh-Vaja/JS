@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr=[50,20,30,10,40];
+
+        for(let i=0;i<arr.length;i++){
+            for(let j=0;j<arr.length-i-1;j++){
+                if(arr[j] < arr[j+1]){
+                    let temp=arr[j];
+                    arr[j]=arr[j+1];
+                    arr[j+1]=temp;
+                }
+            }
+        }
+        document.write("Decending order of given array is: ",arr);
+    </script>
+</body>
+</html>

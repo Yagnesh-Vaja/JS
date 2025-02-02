@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = ["madam", "hello", "racecar", "world", "level", "noon"];
+        let result=[];
+        for(let i=0;i<arr.length;i++){
+            let str=arr[i];
+            let reverseStr="";
+
+            for(let j=str.length-1;j>=0;j--){
+               reverseStr+=str[j];
+            }
+
+            if(str===reverseStr){
+                result.push(str);
+            }
+        }
+        document.write(result);
+    </script>
+</body>
+</html>

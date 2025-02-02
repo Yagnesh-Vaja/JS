@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[1,"yagnesh",2,"Aman",3,"raj",4,"dhruv",5,"shubham"];
+        let result=[];
+        for(let i=0;i<arr.length;i++){
+            if(typeof arr[i]==="string"){
+                result.push(arr[i].toUpperCase());
+            }else{
+                result.push(arr[i]);
+            }
+        }
+        document.write(result);
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function interOfArr(arr1,arr2){
+            return arr1.filter(element => arr2.includes(element));
+        }
+
+        const arr1=[1,2,3,4,5];
+        const arr2=[4,5,6,7,8];
+
+        const interArr=interOfArr(arr1,arr2);
+        document.write("Intersection of array: ",interArr);
+    </script>
+</body>
+</html>
